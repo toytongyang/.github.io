@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>jQuery | Clear Water,Blue Sky</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="###1. jquery的基本概念
+1.1  兼容性 代码简单
+
+1.2 什么是jquery js库
+###2. 详细解释    2.1 版本    2.2 $ is not defined    2.3 入口函数    2.4 $    $(function(){})   $(domObj)   $(“”)    2.5        $li[0]   :DOM对象        $li.eq(">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jQuery">
+<meta property="og:url" content="http://yoursite.com/2016/11/01/jQuery/index.html">
+<meta property="og:site_name" content="Clear Water,Blue Sky">
+<meta property="og:description" content="###1. jquery的基本概念
+1.1  兼容性 代码简单
+
+1.2 什么是jquery js库
+###2. 详细解释    2.1 版本    2.2 $ is not defined    2.3 入口函数    2.4 $    $(function(){})   $(domObj)   $(“”)    2.5        $li[0]   :DOM对象        $li.eq(">
+<meta property="og:updated_time" content="2016-11-24T11:32:53.650Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="jQuery">
+<meta name="twitter:description" content="###1. jquery的基本概念
+1.1  兼容性 代码简单
+
+1.2 什么是jquery js库
+###2. 详细解释    2.1 版本    2.2 $ is not defined    2.3 入口函数    2.4 $    $(function(){})   $(domObj)   $(“”)    2.5        $li[0]   :DOM对象        $li.eq(">
+  
+    <link rel="alternate" href="/atom.xml" title="Clear Water,Blue Sky" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Clear Water,Blue Sky</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-jQuery" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/01/jQuery/" class="article-date">
+  <time datetime="2016-11-01T07:26:11.000Z" itemprop="datePublished">2016-11-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      jQuery
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###1. jquery的基本概念</p>
+<pre><code>1.1  兼容性 代码简单
+
+1.2 什么是jquery js库
+</code></pre><p>###2. 详细解释<br>    2.1 版本<br>    2.2 $ is not defined<br>    2.3 入口函数<br>    2.4 $    $(function(){})   $(domObj)   $(“”)<br>    2.5<br>        $li[0]   :DOM对象<br>        $li.eq(0)：jquery对象<br>    2.6</p>
+<p>###3. 选择器（重点）<br>    3.1 基本选择器<br>        id<br>        类<br>        标签<br>        并集(s1,s2)<br>        交集(s1s2)<br>    3.2 层级选择器<br>        子代选择器(s1&gt;s2)<br>        后代选择器(s1 s2)<br>    3.3 过滤选择器<br>        :odd<br>        :even<br>        :eq(index)<br>    3.4 筛选选择器（方法）<br>        children([selector]):子代<br>        find(selector):后代<br>        siblings([selector]):兄弟<br>        next()<br>        parent()<br>        eq(index)</p>
+<pre><code>index()：当前元素在兄弟元素里面的索引
+</code></pre><p>###4. 样式操作(重要)<br>    4.1 css操作<br>        设置单个样式：css(name, value)<br>        设置多个样式：css(json)  {“name1”:”value1”,”name2”:”value2”…}<br>        获取样式：css(name)  :注意：如果是多个元素，返回的是第一个元素对应的值。<br>    4.2 class操作<br>        添加类：addClass(name)<br>        移除：removeClass(name)<br>        判断类：hasClass(name)<br>        切换类：toggleClass(name)</p>
+<p>###5. 动画<br>    5.1 三组基本动画</p>
+<pre><code>    show(speed, callback)
+
+    show/hide/toggle
+    slideDown/slideUp/slideToggle
+    fadeIn/fadeOut/fadeToggle
+
+5.2 animate(json, speed, easing, callback)
+    easing:swing(默认)  linear
+
+5.3 动画队列与停止动画
+    stop()：停止当前正在执行的动画（stop()）
+    clearQueue:是否清除动画队列
+    jumpToEnd:是否跳转到当前动画的最终效果
+</code></pre><p>###6. 节点操作<br>        添加节点：append prepend after before<br>        清空节点：empty() 清理门户<br>        删除节点：remove() 自杀<br>        克隆节点：clone():深度复制   clone(true):深度复制，并且复制事件</p>
+<p>###7. DOM操作<br>    val:操作表单值    val():获取值  val(value):设置值<br>    操作内容：<br>        html:   html():获取内容+标签   html(value):能识别html标签<br>        text:   text():获取内容，丢弃标签  text(value):对html标签进行转义。</p>
+<pre><code>属性操作（重要）
+    attr:
+        attr(name, value)设置属性
+        attr(json)
+        attr(name) :如果有多个元素，返回的是第一个元素的值。
+    prop:checked disabled  selected
+</code></pre><p>###8. DOM操作<br>    操作尺寸<br>        width<br>        innerWidth<br>        outerWidth<br>        outerWidth(true)</p>
+<pre><code>操作坐标
+
+    offset
+    position  有定位的父元素
+</code></pre><p>###9. 事件机制<br>    简单事件  bind  delegate  on</p>
+<pre><code>on的两种方法
+$(&quot;div&quot;).on(&quot;click&quot;, function(){})
+$(&quot;div&quot;).on(&quot;click&quot;, &quot;p&quot;, function(){})
+
+
+解除事件绑定
+off()
+off(&quot;click&quot;)
+off(&quot;click&quot;, &quot;**&quot;)
+
+事件触发
+click();
+trigger(&quot;click&quot;)
+triggerHandler(&quot;click&quot;):不会触发浏览器的默认行为
+
+事件对象
+    pageX
+    event.stopPropagation()
+    event.preventDefault()
+    return false;
+</code></pre><p>###10. 补充<br>    链式编程：<br>        1.对于设置性操作，可以继续链式下去，获取性操作不能链式下去<br>        2.对于筛选选择器，会改变内部的DOM元素，   end()  或者换行</p>
+<pre><code>隐式迭代：
+    设置性操作，设置的是所有的元素
+    获取性操作，获取的是第一个元素
+
+显示迭代：for  each   :每一个元素做不同的操作的时候
+
+多库共存
+var c = $.noConflict();
+</code></pre><p>###11. 插件</p>
+<pre><code>jquery.color.js
+jquery.lazyload.js
+jquery.fullpage.js
+jquery.ui.js
+引入jquery  引入插件（js.css）  使用插件（使用插件提供的方法）
+
+
+制作插件：就是给jquery对象添加方法。
+    $.fn.fnName = function(){}
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/11/01/jQuery/" data-id="ciwkf7niv0003dcg6owfat59m" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/11/25/CSS3/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          HTML5
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/11/01/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/11/25/CSS3/">HTML5</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/01/jQuery/">jQuery</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/01/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2016/10/05/HTML5/">CSS3</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 toy<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
